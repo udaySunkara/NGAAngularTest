@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="container__display-pane">
+        <input type="text" [(ngModel)]="numberInput" placeholder="Number" readonly />
+        <input type="text" [(ngModel)]="textDisplay" placeholder="Text" readonly />
+    </div>
+    <div class="container__input-pane">
+        <div class="container__input-pane__btn-container" [ngClass] = "{'rmvMrgnLft': (index === 0 || index % 3 === 0)}" *ngFor="let lbl of btnLabelArr;let index=index;">
+            <button (click)="onBtnClick(lbl)">{{lbl}}</button>
+        </div>
+    </div>
+</div>

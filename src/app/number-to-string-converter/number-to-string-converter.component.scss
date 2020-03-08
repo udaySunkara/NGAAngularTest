@@ -1,0 +1,42 @@
+.container {
+    max-width: 200px;
+    height: 300px;
+    background-color: gray;
+    padding: 0px 10px;
+
+    @media screen and (max-width: 639px) {
+        margin: 0 auto;
+    }
+
+    &__display-pane {
+        text-align: center;
+
+        input {
+            width: 196px;
+        }
+    }
+
+    &__input-pane {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        
+        &__btn-container {
+            width: 60px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            height: 52px;
+
+            button {
+                width: 100%;
+                height: 100%;
+                background-color: lightgray;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+:host .rmvMrgnLft {
+    margin-left: 0px;
+}
